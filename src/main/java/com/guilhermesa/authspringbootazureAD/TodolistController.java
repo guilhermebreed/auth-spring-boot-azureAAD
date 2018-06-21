@@ -86,7 +86,7 @@ public class TodolistController {
 
         if (current.isMemberOf(
                 //Coloque o objectID do seu Grupo
-                new UserGroup("xxxxxx-xxxxxx-xxxxxx-xxxxxx-xxxxxx", "group1"))) {
+                new UserGroup("xxxxx-xxxxxx-xxxxx-xxxxx-xxxxx", "group1"))) {
             final List<TodoItem> find = todoList.stream().filter(i -> i.getID() == id).collect(Collectors.toList());
             if (!find.isEmpty()) {
                 todoList.remove(todoList.indexOf(find.get(0)));
